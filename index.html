@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth bg-[#080808]">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nour Kazem - Creative Producer, Director & Entertainment Operations lead with 5+ years experience and 75+ delivered commercial & editorial productions.">
+    <meta name="keywords" content="Nour Kazem, Creative Producer, Director, Entertainment Operations, Cairo, SceneNoise, CairoScene, Red Bull, Production Portfolio">
+    <meta name="author" content="Nour Kazem">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="NOUR KAZEM // CREATIVE PRODUCER, DIRECTOR & ENTERTAINMENT OPERATIONS">
+    <meta property="og:description" content="Creative operations lead and director with 5+ years experience delivering 75+ commercial, docuseries, and editorial productions.">
+    <meta property="og:image" content="2D1A8897.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NOUR KAZEM // CREATIVE PRODUCER & DIRECTOR">
+    <meta name="twitter:description" content="Creative operations lead and director with 5+ years experience delivering 75+ commercial, docuseries, and editorial productions.">
+    <meta name="twitter:image" content="2D1A8897.jpg">
+
+    <title>NOUR KAZEM // CREATIVE PRODUCER, DIRECTOR & ENTERTAINMENT OPERATIONS</title>
+
+    <!-- Preconnect for external Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,600;0,700;1,700&family=JetBrains+Mono:wght@300;400;500;700;800&family=Space+Grotesk:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brutal-black': '#060608',
+                        'brutal-surface': '#0c0c10',
+                        'brutal-card': '#111116',
+                        'brutal-border': '#242430',
+                        'brutal-border-bright': '#3d3d52',
+                        'acid-orange': '#ff4600',
+                        'acid-yellow': '#f59e0b',
+                        'hyper-cyan': '#00f0ff',
+                        'signal-green': '#10b981',
+                    },
+                    fontFamily: {
+                        display: ['Chakra Petch', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        sans: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07070a;
+            color: #d4d4d8;
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .bg-industrial-grid {
+            background-size: 28px 28px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+        }
+
+        .brutal-panel {
+            background-color: #0d0d12;
+            border: 1px solid #23232e;
+            position: relative;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .brutal-panel:hover {
+            border-color: #ff4600;
+            box-shadow: 0 0 25px rgba(255, 70, 0, 0.12);
+        }
+        .brutal-panel::before {
+            content: "┌";
+            position: absolute;
+            top: -6px;
+            left: -4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #ff4600;
+            line-height: 1;
+            pointer-events: none;
+        }
+        .brutal-panel::after {
+            content: "┘";
+            position: absolute;
+            bottom: -6px;
+            right: -4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: #ff4600;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .hardware-pod {
+            background-color: #0b0b10;
+            border: 1px solid #23232e;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.2s ease;
+        }
+        .hardware-pod:hover {
+            border-color: #00f0ff;
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
+        }
+
+        .hardware-pod iframe,
+        .brutal-panel iframe,
+        .ig-hardware-frame,
+        iframe {
+            filter: none !important;
+            -webkit-filter: none !important;
+            backdrop-filter: none !important;
+            opacity: 1 !important;
+        }
+
+        .ig-crop-container {
+            width: 100%;
+            height: 520px;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+            filter: none !important;
+        }
+        .ig-hardware-frame {
+            width: 100%;
+            min-width: 100%;
+            height: 600px;
+            border: none;
+            display: block;
+            margin: 0;
+            padding: 0;
+            filter: none !important;
+        }
+
+        .mech-shelf {
+            background-color: rgba(9, 9, 13, 0.96);
+            backdrop-filter: blur(16px);
+        }
+
+        @keyframes pulseRec {
+            0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #ff4600); }
+            50% { opacity: 0.3; filter: none; }
+        }
+        .rec-beacon {
+            animation: pulseRec 1.3s infinite ease-in-out;
+        }
+
+        .stencil-tag {
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 9px;
+            padding: 2px 6px;
+            border: 1px solid #2a2a38;
+            background: #14141c;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #07070a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #232330;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ff4600;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-industrial-grid flex flex-col justify-between selection:bg-acid-orange selection:text-black">
+
+    <!-- STICKY MULTI-TIER MECHANICAL NAVIGATION -->
+    <header class="sticky top-0 z-50 mech-shelf border-b border-brutal-border">
+        <!-- TIER 1: CORE MASTER TABS & LIVE TELEMETRY -->
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
+            <div class="flex items-center gap-2.5">
+                <span class="w-2.5 h-2.5 bg-acid-orange rounded-none rec-beacon inline-block"></span>
+                <span class="font-mono text-xs text-white font-extrabold tracking-wider uppercase">NOUR KAZEM // PRODUCTION PORTFOLIO</span>
+                <span class="hidden sm:inline-block stencil-tag text-gray-400">CAIRO_EGY</span>
+                <span class="hidden md:inline-block stencil-tag text-signal-green">OPEN FOR HIRE: FREELANCE & IN-HOUSE</span>
+            </div>
+
+            <!-- Master Hardware Buttons -->
+            <nav class="flex flex-wrap items-center gap-1.5 font-mono text-[11px] sm:text-xs">
+                <button onclick="switchMasterTab('tab-overview')" id="btn-tab-overview" class="master-tab-btn px-3 py-1.5 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all">00 // OVERVIEW</button>
+                <button onclick="switchMasterTab('tab-redbull')" id="btn-tab-redbull" class="master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all">01 // RED BULL SADA SOT</button>
+                <button onclick="switchMasterTab('tab-editorial')" id="btn-tab-editorial" class="master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all">02 // EDITORIAL (MO4)</button>
+                <button onclick="switchMasterTab('tab-commercials')" id="btn-tab-commercials" class="master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all">03 // COMMERCIALS</button>
+                <button onclick="switchMasterTab('tab-musicvideos')" id="btn-tab-musicvideos" class="master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all">04 // MUSIC VIDEOS & LABEL</button>
+                <button onclick="switchMasterTab('tab-live')" id="btn-tab-live" class="master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all">05 // LIVE & EXP</button>
+            </nav>
+        </div>
+
+        <!-- TIER 2: ATTACHED SUBTAB SHELF -->
+        <div id="attached-subtab-bar" class="border-t border-brutal-border bg-[#09090d] px-3 sm:px-6 py-2 transition-all">
+            <div class="max-w-7xl mx-auto flex items-center justify-between overflow-x-auto no-scrollbar gap-2">
+                <div id="subtab-container" class="flex items-center gap-1.5 font-mono text-[10px] sm:text-xs text-gray-400 whitespace-nowrap">
+                    <!-- Injected dynamically via JS -->
+                </div>
+                <div class="hidden md:flex items-center gap-2 font-mono text-[10px] text-gray-400">
+                    <span class="text-hyper-cyan font-bold">[END-TO-END PIPELINES &bull; BRIEF TO SCREEN]</span>
+                    <span class="text-signal-green">READY_TO_DEPLOY</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- TIER 3: ATTACHED SERIES SHELF -->
+        <div id="attached-series-bar" class="hidden border-t border-brutal-border bg-[#07070b] px-3 sm:px-6 py-1.5 transition-all">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-2">
+                <div id="series-container" class="flex flex-wrap items-center gap-1.5 font-mono text-[10px] sm:text-[11px] text-gray-400">
+                    <!-- Injected dynamically for SceneNoise / CairoScene -->
+                </div>
+                <span class="hidden xl:inline-block font-mono text-[9px] text-acid-yellow tracking-wider shrink-0">EDITORIAL BROADCAST ARCHIVE // MO4 NETWORK</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN BODY CONTENT -->
+    <main class="max-w-7xl mx-auto w-full px-3 sm:px-6 py-6 sm:py-8 flex-grow">
+
+        <!-- ========================================== -->
+        <!-- TAB 00: OVERVIEW & CREDENTIALS -->
+        <!-- ========================================== -->
+        <section id="tab-overview" class="master-panel space-y-8">
+            <!-- Hero Dossier HUD Panel -->
+            <div class="brutal-panel p-5 sm:p-8 relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-acid-orange/10 rounded-none blur-3xl pointer-events-none"></div>
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    
+                    <!-- Verified Portrait Dossier -->
+                    <div class="lg:col-span-4 flex flex-col items-center">
+                        <div class="w-full max-w-[290px] aspect-[4/5] bg-black border-2 border-brutal-border relative shadow-[0_0_30px_rgba(0,0,0,0.9)] group">
+                            <img id="callsign-portrait-img" src="2D1A8897.jpg" width="290" height="362" loading="eager" onerror="this.src='https://placehold.co/600x750/0e0e14/ff4600?text=NOUR+KAZEM'" alt="Nour Kazem - Callsign Dossier Portrait" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-700">
+                            
+                            <!-- CALLSIGN BADGE WITH DIRECT PHOTO EDIT / UPLOAD TRIGGER -->
+                            <div class="absolute top-2 left-2 flex items-center gap-1.5 bg-black/90 border border-brutal-border px-2 py-1">
+                                <span class="stencil-tag !p-0 !border-0 !bg-transparent text-acid-orange font-bold">CALLSIGN: NOUR KAZEM</span>
+                                <label for="callsign-photo-input" class="cursor-pointer text-gray-400 hover:text-white font-mono text-[9px] underline ml-1" title="Upload new photo">[CHANGE]</label>
+                                <button onclick="promptCallsignPhotoUrl()" type="button" class="text-gray-500 hover:text-acid-orange font-mono text-[9px]" title="Enter URL">[URL]</button>
+                                <input type="file" id="callsign-photo-input" accept="image/*" class="hidden" onchange="handleCallsignPhotoUpload(event)">
+                            </div>
+
+                            <div class="absolute bottom-2 left-2 right-2 bg-black/90 border border-brutal-border px-2 py-1.5 flex justify-between items-center font-mono text-[9px]">
+                                <span class="text-white font-bold">CAIRO // EGY</span>
+                                <span class="text-signal-green font-bold">AVAILABLE FOR HIRE</span>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact Hub -->
+                        <div class="w-full max-w-[290px] mt-3 bg-black/80 border border-brutal-border p-2.5 space-y-1.5 font-mono text-[10px]">
+                            <div class="flex justify-between items-center text-gray-400">
+                                <span>EMAIL:</span>
+                                <a href="mailto:nourkazem6@gmail.com" class="text-white hover:text-acid-orange font-bold truncate">nourkazem6@gmail.com</a>
+                            </div>
+                            <div class="flex justify-between items-center text-gray-400">
+                                <span>PHONE:</span>
+                                <a href="tel:+201006850680" class="text-hyper-cyan font-bold">+20 100 685 0680</a>
+                            </div>
+                            <div class="flex gap-2 pt-1 border-t border-brutal-border">
+                                <a href="mailto:nourkazem6@gmail.com?subject=Creative%20Producer%20Inquiry%20-%20Nour%20Kazem" class="flex-1 text-center py-1 bg-acid-orange text-black font-extrabold hover:bg-white transition-all uppercase tracking-wider text-[9px]">HIRE AS PRODUCER</a>
+                                <a href="https://wa.me/201006850680" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 border border-brutal-border bg-brutal-card text-gray-300 hover:text-white hover:border-signal-green text-center text-[9px]">WHATSAPP &nearr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Executive Overview Data -->
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="flex flex-wrap items-center gap-2 font-mono text-xs">
+                            <span class="bg-acid-orange text-black px-2 py-0.5 font-extrabold uppercase tracking-wider">COMMAND FILE // NOUR KAZEM</span>
+                            <span class="stencil-tag text-white">CREATIVE PRODUCER &bull; DIRECTOR</span>
+                            <span class="stencil-tag text-hyper-cyan">CREATIVE MARKETING OPS</span>
+                            <span class="stencil-tag text-signal-green">IN-HOUSE & FREELANCE</span>
+                        </div>
+                        
+                        <!-- Header Title Area -->
+                        <div class="space-y-1 pt-1">
+                            <h1 class="text-3xl sm:text-5xl font-black text-white font-display uppercase tracking-tight leading-none">
+                                NOUR KAZEM
+                            </h1>
+                            <h2 class="text-base sm:text-xl font-bold text-acid-orange font-display uppercase tracking-wider">
+                                CREATIVE PRODUCER // DIRECTOR // ENTERTAINMENT OPERATIONS
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-300 font-sans text-sm sm:text-base leading-relaxed max-w-3xl">
+                            Creative operations lead and director with 5+ years of experience managing production pipelines, enterprise brand campaigns, live arena broadcasts, and multi-city film units. Successfully delivered <strong class="text-white">75+ commercial, docuseries, and editorial productions</strong> for <strong class="text-white">MO4 Network</strong> platforms (<em class="text-gray-200">SceneNoise, CairoScene, El Fasla</em>) and global enterprise clients including <strong class="text-acid-orange">PepsiCo, Red Bull, DiDi, and Papia</strong>. Co-Founder of independent label <strong class="text-hyper-cyan">Ka2en Records</strong>, securing global distribution and partnership contracts with Empire, Universal Music Group, and MDLBEAST with over 2M+ streams.
+                        </p>
+                        <p class="text-gray-400 font-sans text-xs sm:text-sm leading-relaxed max-w-3xl">
+                            Specialized in <strong class="text-white">full end-to-end delivery</strong>: translating briefs into actionable treatments, obtaining client and executive sign-off, hand-picking multidisciplinary crews (DPs, lighting, sound, photographers, editors, colorists, motion designers), securing multi-regional permits and location scouting, directing on-ground sets, commanding high-pressure live stage broadcasts, and overseeing post-production workflows until client sign-off and retention.
+                        </p>
+
+                        <!-- Brutalist Key Telemetry Grid -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 border-t border-brutal-border">
+                            <div class="bg-black/60 p-3 border border-brutal-border">
+                                <span class="block font-mono text-[10px] text-gray-400 uppercase tracking-widest">END-TO-END DELIVERIES</span>
+                                <span class="text-2xl font-black text-white font-mono">75+ SHOOTS</span>
+                                <span class="block text-[9px] text-gray-400 font-mono mt-0.5">MO4 & Global Clients</span>
+                            </div>
+                            <div class="bg-black/60 p-3 border border-brutal-border">
+                                <span class="block font-mono text-[10px] text-acid-orange uppercase tracking-widest">BUDGETS & CREWS</span>
+                                <span class="text-2xl font-black text-acid-orange font-mono">$100K+</span>
+                                <span class="block text-[9px] text-gray-400 font-mono mt-0.5">25+ Crew Units Commanded</span>
+                            </div>
+                            <div class="bg-black/60 p-3 border border-brutal-border">
+                                <span class="block font-mono text-[10px] text-white uppercase tracking-widest">ARENA ATTENDEES</span>
+                                <span class="text-2xl font-black text-white font-mono">10,000+</span>
+                                <span class="block text-[9px] text-gray-400 font-mono mt-0.5">Live Arena Broadcast Lead</span>
+                            </div>
+                            <div class="bg-black/60 p-3 border border-brutal-border">
+                                <span class="block font-mono text-[10px] text-signal-green uppercase tracking-widest">STREAMING REACH</span>
+                                <span class="text-2xl font-black text-signal-green font-mono">2M+</span>
+                                <span class="block text-[9px] text-gray-400 font-mono mt-0.5">Views & Music Streams</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic Pillars Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="brutal-panel p-4 space-y-2">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-acid-orange font-bold">PILLAR 01</span>
+                        <span class="text-gray-400">[PIPELINE]</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white uppercase font-display">CREATIVE PRODUCING & PIPELINES</h3>
+                    <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                        Translating brand briefs into high-retention concepts. Assembling multidisciplinary crews (DP, sound, lights, photo, editor, colorist), scheduling fast sprints, and directing post-production pipelines to final sign-off.
+                    </p>
+                </div>
+                <div class="brutal-panel p-4 space-y-2">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-acid-orange font-bold">PILLAR 02</span>
+                        <span class="text-gray-400">[DIRECTING & NARRATIVE]</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white uppercase font-display">FILM DIRECTING & VISUAL STORYTELLING</h3>
+                    <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                        Directing narrative music videos, docuseries, and original IP series like <em>Noise Breakdown</em>. Leading on-ground crews, camera staging, talent performance, and guiding editors and colorists through final picture lock.
+                    </p>
+                </div>
+                <div class="brutal-panel p-4 space-y-2">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-signal-green font-bold">PILLAR 03</span>
+                        <span class="text-gray-400">[LIVE OPS]</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white uppercase font-display">LIVE BROADCAST & ACTIVATIONS</h3>
+                    <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                        Managing on-site media booths, headset comms, stage and backstage operations, and IMAG stadium screen feeds for 10,000+ attendee concerts, Art D'Egypte, Gouna Film Festival, and RiseUp Summit.
+                    </p>
+                </div>
+                <div class="brutal-panel p-4 space-y-2">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-hyper-cyan font-bold">PILLAR 04</span>
+                        <span class="text-gray-400">[LABEL OPS]</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white uppercase font-display">LABEL OPS & ARTIST STRATEGY</h3>
+                    <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                        Co-Founder of Ka2en Records. Managing 8 artists, negotiating distribution contracts with Empire and Universal Music Group, and delivering 15+ narrative music videos and album rollouts.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Comprehensive Experience Breakdown Dossier -->
+            <div class="brutal-panel p-5 sm:p-6 space-y-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brutal-border pb-3">
+                    <div class="flex items-center gap-2 font-mono text-xs">
+                        <span class="bg-acid-orange text-black px-2 py-0.5 font-bold uppercase">CAREER DOSSIER</span>
+                        <span class="text-white font-bold uppercase">EXPERIENCE & VERIFIED APPOINTMENTS</span>
+                    </div>
+                    <span class="font-mono text-xs text-signal-green">READY TO DEPLOY // FREELANCE & IN-HOUSE</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 font-sans text-xs">
+                    <div class="bg-black/60 p-4 border border-brutal-border space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px]">
+                            <span class="text-acid-orange font-bold">MO4 NETWORK</span>
+                            <span class="text-gray-400">2023 – 2025</span>
+                        </div>
+                        <h4 class="text-white font-bold font-display text-sm uppercase">CREATIVE PRODUCER</h4>
+                        <p class="text-gray-300 leading-relaxed text-[11px]">
+                            Spearheaded end-to-end delivery of 75+ episodic shoots across SceneNoise, CairoScene, and El Fasla. Created and directed the flagship producer-series <em class="text-white">Noise Breakdown</em>. Produced brand campaigns for PepsiCo, Red Bull, DiDi, and MDLBEAST XP.
+                        </p>
+                        <span class="stencil-tag text-gray-400 inline-block">75+ DELIVERIES &bull; BRIEF TO SCREEN</span>
+                    </div>
+
+                    <div class="bg-black/60 p-4 border border-brutal-border space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px]">
+                            <span class="text-hyper-cyan font-bold">KA2EN RECORDS</span>
+                            <span class="text-gray-400">2020 – PRESENT</span>
+                        </div>
+                        <h4 class="text-white font-bold font-display text-sm uppercase">CO-FOUNDER & MANAGING DIRECTOR</h4>
+                        <p class="text-gray-300 leading-relaxed text-[11px]">
+                            Built independent record label with 8 artists on roster. Secured licensing and distribution partnerships with Empire, Universal Music Group, and MDLBEAST. Produced and directed 15+ music videos, 1 album film, and 3 album campaigns generating 2M+ streams.
+                        </p>
+                        <span class="stencil-tag text-gray-400 inline-block">2M+ STREAMS &bull; UMG / EMPIRE DEALS</span>
+                    </div>
+
+                    <div class="bg-black/60 p-4 border border-brutal-border space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px]">
+                            <span class="text-signal-green font-bold">RED BULL &times; SPOTIFY</span>
+                            <span class="text-gray-400">CAMPAIGN HIGHLIGHT</span>
+                        </div>
+                        <h4 class="text-white font-bold font-display text-sm uppercase">AP / AD & ACCOUNT MANAGER</h4>
+                        <p class="text-gray-300 leading-relaxed text-[11px]">
+                            Assistant Producer, Assistant Director, and Account Manager across 6 Egyptian cities. Researched and scouted all locations, directed post-production teams across 6 MVs, 6 docuseries episodes, and 18 digital assets. Commanded stage/backstage live unit for 10,000+ arena concert.
+                        </p>
+                        <span class="stencil-tag text-gray-400 inline-block">10,000+ ARENA &bull; 6-CITY ROADMAP</span>
+                    </div>
+
+                    <div class="bg-black/60 p-4 border border-brutal-border space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px]">
+                            <span class="text-acid-yellow font-bold">BURKAN & ACADEMIA</span>
+                            <span class="text-gray-400">2023 – 2026</span>
+                        </div>
+                        <h4 class="text-white font-bold font-display text-sm uppercase">COO & B.A. WESTERN UNIV</h4>
+                        <p class="text-gray-300 leading-relaxed text-[11px]">
+                            Co-Founder & COO at Burkan Sports Agency (18 tournaments, 1,000+ attendees, $20K client contracts, 20-person media crews). Bachelor of Arts in Political Science & Minor in Psychology from Western University, London, Ontario. Fluent bilingual Arabic & English.
+                        </p>
+                        <span class="stencil-tag text-gray-400 inline-block">WESTERN UNIVERSITY &bull; BILINGUAL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 01: RED BULL SADA SOT -->
+        <!-- ========================================== -->
+        <section id="tab-redbull" class="master-panel hidden space-y-6">
+            
+            <!-- 01.0 // OVERVIEW -->
+            <div id="subpanel-rb-overview" class="rb-subpanel space-y-6">
+                <!-- Project Dossier Card -->
+                <div class="brutal-panel p-5 sm:p-6 space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-brutal-border pb-3">
+                        <div class="flex items-center gap-2 font-mono text-xs">
+                            <span class="bg-acid-orange text-black px-2 py-0.5 font-bold uppercase">CAMPAIGN MASTERPIECE</span>
+                            <span class="text-white font-bold uppercase">RED BULL SADA SOT (ريد بُل صدى صوت)</span>
+                        </div>
+                        <span class="font-mono text-xs text-signal-green">[ROLE: AP, AD, ACCOUNT MANAGER & STAGE LEAD]</span>
+                    </div>
+                    
+                    <p class="text-gray-300 font-sans text-sm sm:text-base leading-relaxed">
+                        The concept of <strong class="text-white">Red Bull Sada Sot</strong> was to take 6 top Egyptian hip-hop artists back to their hometowns to collaborate and create original music with local traditional musicians from each city. As the outsourced creative and production agency, our team managed the entire campaign lifecycle from the initial client brief to final delivery.
+                    </p>
+                    <p class="text-gray-300 font-sans text-xs sm:text-sm leading-relaxed">
+                        I served as <strong class="text-white">Assistant Producer, Assistant Director, and Account Manager</strong> throughout the campaign. I researched and interviewed each artist to develop a creative direction authentic to their roots, scouted and secured filming locations across all 6 cities prior to production, and acted as the primary liaison managing communication with Red Bull. During post-production, I directed editors and coordinated multidisciplinary teams (videographers, editors, graphic designers, colorists) through picture lock. The campaign culminated in a 10,000+ attendee stadium concert where I commanded the stage and backstage live coverage unit broadcasting directly to arena screens, followed by co-producing a 500+ guest private documentary premiere screening with Red Bull.
+                    </p>
+
+                    <!-- Key Metrics -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2 font-mono text-xs">
+                        <div class="bg-black/60 p-3 border border-brutal-border">
+                            <span class="text-gray-400 block text-[10px]">CITIES COVERED</span>
+                            <span class="text-xl font-bold text-white">6 CITIES</span>
+                        </div>
+                        <div class="bg-black/60 p-3 border border-brutal-border">
+                            <span class="text-gray-400 block text-[10px]">TOTAL DELIVERABLES</span>
+                            <span class="text-xl font-bold text-acid-orange">30+ ASSETS</span>
+                        </div>
+                        <div class="bg-black/60 p-3 border border-brutal-border">
+                            <span class="text-gray-400 block text-[10px]">STADIUM AUDIENCE</span>
+                            <span class="text-xl font-bold text-hyper-cyan">10,000+ FANS</span>
+                        </div>
+                        <div class="bg-black/60 p-3 border border-brutal-border">
+                            <span class="text-gray-400 block text-[10px]">STAGE PERFORMERS</span>
+                            <span class="text-xl font-bold text-signal-green">18 ARTISTS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Launch & Campaign Assets (3 Clean Columns) -->
+                <div class="space-y-3">
+                    <span class="font-mono text-xs text-white uppercase font-bold block">CAMPAIGN LAUNCH & ROSTER ASSETS</span>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Asset 1: Launch Reel -->
+                        <div class="hardware-pod p-3 space-y-2">
+                            <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                                <span class="text-acid-orange font-bold">ASSET 01 // LAUNCH REEL</span>
+                                <a href="https://www.instagram.com/reel/C5l3ryUNt1o/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                            </div>
+                            <div class="ig-crop-container">
+                                <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5l3ryUNt1o/embed/captioned/" title="Red Bull Sada Sot Launch Reel" scrolling="no" loading="lazy"></iframe>
+                            </div>
+                            <h4 class="font-mono text-xs font-bold text-white">Project Announcement Reel</h4>
+                            <p class="text-[11px] text-gray-400 font-sans">Official teaser announcing the 6-city return to roots musical experiment.</p>
+                        </div>
+
+                        <!-- Asset 2: Key Visual & Roster -->
+                        <div class="hardware-pod p-3 space-y-2">
+                            <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                                <span class="text-hyper-cyan font-bold">ASSET 02 // KEY VISUAL</span>
+                                <a href="https://www.instagram.com/p/C5oJv7go3y4/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                            </div>
+                            <div class="ig-crop-container">
+                                <iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C5oJv7go3y4/embed/captioned/" title="Red Bull Sada Sot Key Visual" scrolling="no" loading="lazy"></iframe>
+                            </div>
+                            <h4 class="font-mono text-xs font-bold text-white">Official Campaign Key Visual</h4>
+                            <p class="text-[11px] text-gray-400 font-sans">Visual identity revealing the 6 artists and regional destinations.</p>
+                        </div>
+
+                        <!-- Asset 3: Campaign Highlight -->
+                        <div class="hardware-pod p-3 space-y-2">
+                            <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                                <span class="text-signal-green font-bold">ASSET 03 // CAMPAIGN ROLLOUT</span>
+                                <a href="https://www.instagram.com/p/C6jTZdIN45G/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                            </div>
+                            <div class="ig-crop-container">
+                                <iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C6jTZdIN45G/embed/captioned/" title="Red Bull Sada Sot Campaign Feature" scrolling="no" loading="lazy"></iframe>
+                            </div>
+                            <h4 class="font-mono text-xs font-bold text-white">Campaign Feature & Concert Lead-Up</h4>
+                            <p class="text-[11px] text-gray-400 font-sans">Rollout asset celebrating the culmination into the massive live arena concert.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6-City Field Expedition Roadmap (Deep Linked) -->
+                <div class="brutal-panel p-4 space-y-3">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-acid-orange font-bold uppercase">6-CITY EXPEDITION ROADMAP</span>
+                        <span class="text-gray-400">[CLICK ANY CITY TO VIEW DOCU-SERIES EPISODE &rarr;]</span>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-1')" class="bg-black/60 p-3 border border-brutal-border hover:border-acid-orange text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-acid-orange">01 // TANTA</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-acid-orange mt-0.5">LEGE-CY</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 01 &rarr;</span>
+                        </button>
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-2')" class="bg-black/60 p-3 border border-brutal-border hover:border-hyper-cyan text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-hyper-cyan">02 // FAYOUM</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-hyper-cyan mt-0.5">ZIAD ZAZA</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 02 &rarr;</span>
+                        </button>
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-3')" class="bg-black/60 p-3 border border-brutal-border hover:border-signal-green text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-signal-green">03 // ASYUT</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-signal-green mt-0.5">ARSENIK</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 03 &rarr;</span>
+                        </button>
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-4')" class="bg-black/60 p-3 border border-brutal-border hover:border-acid-yellow text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-acid-yellow">04 // ISMAILIA</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-acid-yellow mt-0.5">MOUSV</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 04 &rarr;</span>
+                        </button>
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-5')" class="bg-black/60 p-3 border border-brutal-border hover:border-white text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-gray-400">05 // MANSOURA</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-white mt-0.5">SLYVER</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 05 &rarr;</span>
+                        </button>
+                        <button onclick="navigateToDocuseriesEpisode('docu-ep-6')" class="bg-black/60 p-3 border border-brutal-border hover:border-acid-orange text-left transition-all group">
+                            <span class="block font-mono text-[9px] text-acid-orange">06 // ALEXANDRIA</span>
+                            <span class="block font-bold text-white font-mono text-xs group-hover:text-acid-orange mt-0.5">L5VAV (الفايف)</span>
+                            <span class="text-[9px] text-gray-500 font-mono block mt-1">WATCH EP 06 &rarr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01.1 // DOCU-SERIES (6) -->
+            <div id="subpanel-rb-docuseries" class="rb-subpanel hidden space-y-4">
+                <div class="brutal-panel p-4 space-y-1">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-white font-bold">DOCU-SERIES // 6 REGIONAL EPISODES (ASSISTANT DIRECTED & PRODUCED)</span>
+                        <span class="text-hyper-cyan">[OFFICIAL INSTAGRAM REELS]</span>
+                    </div>
+                    <p class="text-xs text-gray-300">Each episode chronicles an artist's return to their hometown, exploring childhood roots, cultural influences, and intimate collaborations with local folk musicians.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Ep 1 -->
+                    <div id="docu-ep-1" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-acid-orange font-bold">EPISODE 01 // TANTA</span>
+                            <a href="https://www.instagram.com/reel/C5q3nkpNnXh/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5q3nkpNnXh/embed/captioned/" title="Docu-Series Ep 1: Tanta" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 1: رحلة ليجي-سي في طنطا</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Lege-Cy returns to Tanta to explore the Delta sounds shaping his production style.</p>
+                    </div>
+
+                    <!-- Ep 2 -->
+                    <div id="docu-ep-2" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-hyper-cyan font-bold">EPISODE 02 // FAYOUM</span>
+                            <a href="https://www.instagram.com/reel/C6HDDlVtwhE/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6HDDlVtwhE/embed/captioned/" title="Docu-Series Ep 2: Fayoum" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 2: رحلة زياد ظاظا في الفيوم</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Ziad Zaza reunites with childhood peers in Fayoum, blending Egyptian drill with oasis folklore.</p>
+                    </div>
+
+                    <!-- Ep 3 -->
+                    <div id="docu-ep-3" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-signal-green font-bold">EPISODE 03 // ASYUT</span>
+                            <a href="https://www.instagram.com/reel/C6Y5hcONjGu/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6Y5hcONjGu/embed/captioned/" title="Docu-Series Ep 3: Asyut" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 3: رحلة أرسينِك في أسيوط</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">2-day Upper Egypt expedition with Arsenik, exploring Sa'idi rhythmics culminating in a sunrise Nile performance.</p>
+                    </div>
+
+                    <!-- Ep 4 -->
+                    <div id="docu-ep-4" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-acid-yellow font-bold">EPISODE 04 // ISMAILIA</span>
+                            <a href="https://www.instagram.com/reel/C6RtxaPN7EO/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6RtxaPN7EO/embed/captioned/" title="Docu-Series Ep 4: Ismailia" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 4: رحلة موسى في الإسماعيلية</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Mousv connects with Canal folk traditions and Simsimiyya players along the Suez Canal.</p>
+                    </div>
+
+                    <!-- Ep 5 -->
+                    <div id="docu-ep-5" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-white font-bold">EPISODE 05 // MANSOURA</span>
+                            <a href="https://www.instagram.com/reel/C58s2B8tgqC/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C58s2B8tgqC/embed/captioned/" title="Docu-Series Ep 5: Mansoura" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 5: رحلة سلايڤر في المنصورة</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Slyver navigates the urban streets of Mansoura, channeling raw Delta rap energy.</p>
+                    </div>
+
+                    <!-- Ep 6 -->
+                    <div id="docu-ep-6" class="hardware-pod p-3 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-[10px] text-gray-400 border-b border-brutal-border pb-1">
+                            <span class="text-acid-orange font-bold">EPISODE 06 // ALEXANDRIA</span>
+                            <a href="https://www.instagram.com/reel/C51AtvZtHdn/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline">VIEW &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C51AtvZtHdn/embed/captioned/" title="Docu-Series Ep 6: Alexandria" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <h4 class="font-mono text-xs font-bold text-white">Docu-Series Ep 6: رحلة الفايف في إسكندرية</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">L5VAV (الفايف) returns to Alexandria, fusing Mediterranean breeze and coastal storytelling.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01.2 // MUSIC VIDEOS (6) -->
+            <div id="subpanel-rb-musicvideos" class="rb-subpanel hidden space-y-4">
+                <div class="brutal-panel p-4 space-y-1">
+                    <div class="flex justify-between items-center font-mono text-xs">
+                        <span class="text-white font-bold">OFFICIAL MUSIC VIDEOS // ALL 6 CITIES (ASSISTANT DIRECTED & PRODUCED)</span>
+                        <span class="text-acid-orange">[YOUTUBE BROADCAST RELEASES]</span>
+                    </div>
+                    <p class="text-xs text-gray-300">6 full narrative music videos shot on location across 6 Egyptian governorates. Assistant directed on-ground crews, managed logistics, and directed the post-production cut through to final delivery.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- MV 1 -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/ZKo6-ARGwYY" title="مفيش مانع من ريد بُل صدى صوت ا ليجي-سي" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-orange">MV 01 // TANTA</span>
+                        <h4 class="font-mono text-xs font-bold text-white">مفيش مانع من ريد بُل صدى صوت ا ليجي-سي</h4>
+                    </div>
+
+                    <!-- MV 2 -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/aU89rFH1Z_k" title="من الآخر من ريد بُل صدى صوت ا زياد ظاظا" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-hyper-cyan">MV 02 // FAYOUM</span>
+                        <h4 class="font-mono text-xs font-bold text-white">من الآخر من ريد بُل صدى صوت ا زياد ظاظا</h4>
+                    </div>
+
+                    <!-- MV 3 -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/-SMBU24438g" title="بلد البطل من ريد بُل صدى صوت ا سلايڤر" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-white">MV 03 // MANSOURA</span>
+                        <h4 class="font-mono text-xs font-bold text-white">بلد البطل من ريد بُل صدى صوت ا سلايڤر</h4>
+                    </div>
+
+                    <!-- MV 4: Asyut -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/10dmk-p8yLc" title="بوازيك من ريد بُل صدى صوت ا أرسينِك" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-signal-green">MV 04 // ASYUT</span>
+                        <h4 class="font-mono text-xs font-bold text-white">بوازيك من ريد بُل صدى صوت ا أرسينِك</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">2-day shoot in Asyut culminating in a performance with folk musicians by the Nile at sunrise.</p>
+                    </div>
+
+                    <!-- MV 5 -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/rNYn6sDRFuY" title="هي هي زي ما هي من ريد بُل صدى صوت ا موسى" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-yellow">MV 05 // ISMAILIA</span>
+                        <h4 class="font-mono text-xs font-bold text-white">هي هي زي ما هي من ريد بُل صدى صوت ا موسى</h4>
+                    </div>
+
+                    <!-- MV 6 -->
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/SH_2kt2Tqts" title="موج من ريد بُل صدى صوت  ا الڤايڤ" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-orange">MV 06 // ALEXANDRIA</span>
+                        <h4 class="font-mono text-xs font-bold text-white">موج من ريد بُل صدى صوت  ا الڤايڤ</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01.3 // DOCUMENTARY & LIVE CONCERT -->
+            <div id="subpanel-rb-docuconcert" class="rb-subpanel hidden space-y-6">
+                <!-- Master Documentary Feature & Promo -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                    <div class="lg:col-span-8 brutal-panel p-4 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-1">
+                            <span class="text-acid-orange font-bold uppercase">MASTER DOCUMENTARY FEATURE FILM (32 MIN)</span>
+                            <span class="text-gray-400">[FULL 32-MIN YOUTUBE FEATURE]</span>
+                        </div>
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/CscXUdJ8Bg8" title="ريد بُل صدى صوت 🎷 من البداية ... لآخر الحكاية." frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <h3 class="font-mono text-sm font-bold text-white">ريد بُل صدى صوت 🎷 من البداية ... لآخر الحكاية.</h3>
+                        <p class="text-xs text-gray-400">Complete 32-minute documentary film chronicling the entire journey across all 6 Egyptian cities. Assistant Producer, Assistant Director, and Account Manager.</p>
+                    </div>
+
+                    <div class="lg:col-span-4 hardware-pod p-4 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-1">
+                            <span class="text-hyper-cyan font-bold uppercase">DOCUMENTARY PROMO</span>
+                            <a href="https://www.instagram.com/reel/DAECjaSNNS1/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white underline text-[10px]">OPEN &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DAECjaSNNS1/embed/captioned/" title="Red Bull Sada Sot Documentary Promo" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs text-white block font-bold">Documentary Launch Promo</span>
+                        <p class="text-[11px] text-gray-400 font-sans">Official teaser reel for the 32-minute documentary release.</p>
+                    </div>
+                </div>
+
+                <!-- Live Concert Stadium Coverage (10,000+ Attendees) -->
+                <div class="space-y-3">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <span class="font-mono text-xs text-hyper-cyan font-bold uppercase block">LIVE ARENA CONCERT FEEDS (10,000+ ATTENDEES &bull; STAGE / BACKSTAGE UNIT)</span>
+                        <p class="text-xs text-gray-300">All 6 headliners performed on one stage, each joined by at least 2 feature guests—totaling 18 artists on stage. I managed the stage and backstage live coverage unit, broadcasting live backstage views and stage angles directly onto the massive arena IMAG screens.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                                <span>LIVE FEED 01</span>
+                                <a href="https://www.instagram.com/reel/C6zATwOoh4Y/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                            </div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6zATwOoh4Y/embed/captioned/" title="Concert Feed 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                                <span>LIVE FEED 02</span>
+                                <a href="https://www.instagram.com/reel/C6zcDyMI_i1/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                            </div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6zcDyMI_i1/embed/captioned/" title="Concert Feed 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                                <span>LIVE FEED 03</span>
+                                <a href="https://www.instagram.com/reel/C6zhhPWoHut/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                            </div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6zhhPWoHut/embed/captioned/" title="Concert Feed 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                                <span>LIVE FEED 04</span>
+                                <a href="https://www.instagram.com/reel/C6zGz-vo3l0/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                            </div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6zGz-vo3l0/embed/captioned/" title="Concert Feed 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-signal-green font-bold">
+                                <span>RECAP REEL</span>
+                                <a href="https://www.instagram.com/reel/C6z7hM1ICbk/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                            </div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6z7hM1ICbk/embed/captioned/" title="Concert Recap Reel" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01.4 // PROMO (5) -->
+            <div id="subpanel-rb-promo" class="rb-subpanel hidden space-y-4">
+                <div class="brutal-panel p-4 space-y-1">
+                    <span class="font-mono text-xs text-white uppercase block font-bold">DIGITAL PROMO REELS & TEASERS (18 TOTAL PIECES DELIVERED)</span>
+                    <p class="text-xs text-gray-300">Produced on-ground by carving out tight shoot schedules, allocating production time during intensive multi-city filming, and guaranteeing each asset was captured on set. Internally, I was in charge of managing the end-to-end pipeline and delivering the complete digital package directly to the client to fuel the campaign singles, docuseries rollout, and live stadium concert ticket launches.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                            <span>PROMO 01</span>
+                            <a href="https://www.instagram.com/reel/C5v3XZbNils/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                        </div>
+                        <div class="ig-crop-container">
+                            <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5v3XZbNils/embed/captioned/" title="Promo 1" scrolling="no" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                            <span>PROMO 02</span>
+                            <a href="https://www.instagram.com/reel/C6WX6l6totW/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6WX6l6totW/embed/captioned/" title="Promo 2" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                            <span>PROMO 03</span>
+                            <a href="https://www.instagram.com/reel/C6Mdme_NwkT/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6Mdme_NwkT/embed/captioned/" title="Promo 3" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                            <span>PROMO 04</span>
+                            <a href="https://www.instagram.com/reel/C6B7QcwtaKA/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C6B7QcwtaKA/embed/captioned/" title="Promo 4" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold">
+                            <span>PROMO 05</span>
+                            <a href="https://www.instagram.com/reel/C56K0BftE76/" target="_blank" rel="noopener noreferrer" class="hover:text-white">&nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C56K0BftE76/embed/captioned/" title="Promo 5" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 01.5 // VIP SCREENING -->
+            <div id="subpanel-rb-screening" class="rb-subpanel hidden space-y-4">
+                <div class="brutal-panel p-4 space-y-1">
+                    <span class="font-mono text-xs text-white uppercase block font-bold">VIP DOCUMENTARY PREMIERE SCREENING (500+ INDUSTRY GUESTS)</span>
+                    <p class="text-xs text-gray-300">Co-produced in direct collaboration with Red Bull. Successfully hosted 500+ attendees including all 6 artists, their inner circles, and Egypt's leading creative community figures.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="hardware-pod p-4 space-y-2">
+                        <div class="flex justify-between font-mono text-xs text-acid-orange font-bold uppercase">
+                            <span>PREMIERE SCREENING RECAP</span>
+                            <a href="https://www.instagram.com/p/C-aJ7vlg0SK/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline text-[10px]">OPEN POST &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C-aJ7vlg0SK/embed/captioned/" title="Premiere Screening Recap" scrolling="no" loading="lazy"></iframe></div>
+                        <h4 class="font-mono text-xs font-bold text-white">Private Premiere Screening Recap (500+ Guests)</h4>
+                    </div>
+                    <div class="hardware-pod p-4 space-y-2">
+                        <div class="flex justify-between font-mono text-xs text-hyper-cyan font-bold uppercase">
+                            <span>SADA SOT GALLERY</span>
+                            <a href="https://www.instagram.com/reel/C_vI5XbAsXI/" target="_blank" rel="noopener noreferrer" class="hover:text-white underline text-[10px]">OPEN REEL &nearr;</a>
+                        </div>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C_vI5XbAsXI/embed/captioned/" title="Sada Sot Gallery" scrolling="no" loading="lazy"></iframe></div>
+                        <h4 class="font-mono text-xs font-bold text-white">Sada Sot Gallery // Fares Zaitun & Maria Saba</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 02: EDITORIAL (MO4 NETWORK) -->
+        <!-- ========================================== -->
+        <section id="tab-editorial" class="master-panel hidden space-y-6">
+            <!-- Platform A: SceneNoise Panel -->
+            <div id="panel-plat-scenenoise" class="editorial-platform-panel space-y-6">
+                <!-- A.1: NOISE BREAKDOWN -->
+                <div id="subpanel-sn-breakdown" class="sn-subpanel space-y-6">
+                    <div class="brutal-panel p-4 space-y-2">
+                        <div class="flex justify-between items-center font-mono text-xs">
+                            <span class="text-acid-orange font-bold">ORIGINAL SERIES DIRECTED, CONCEPTUALIZED & PRODUCED BY NOUR KAZEM</span>
+                            <span class="text-signal-green">[FLAGSHIP PRODUCER-SERIES]</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-white font-display">NOISE BREAKDOWN // SCENENOISE</h3>
+                        <p class="text-xs text-gray-300">Directed, conceptualized, and curated by Nour Kazem. Leading Arabic music producers deconstruct their most iconic hits track-by-track inside their studios, breaking down drums, 808s, melodies, and vocal chains.</p>
+                    </div>
+
+                    <!-- Longform YouTube Episodes (6) -->
+                    <div class="space-y-2">
+                        <span class="font-mono text-xs text-acid-orange uppercase font-bold block">FULL YOUTUBE EPISODES (EP 1 - 6)</span>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/dOpoow0W4lg" title="NoiseBreakdown | Riff - Yemken Ala Bali ft. Karim Osama" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 01</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown | Riff - Yemken Ala Bali ft. Karim Osama</h4>
+                            </div>
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/x3P1PJnCH9g" title="NoiseBreakdown: Sintax | Wegz - El-Ghasala" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 02</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown: Sintax | Wegz - El-Ghasala</h4>
+                            </div>
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Vx4tHPu6_Gc" title="NoiseBreakdown: Gelba | Mousv - El Qowa" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 03</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown: Gelba | Mousv - El Qowa</h4>
+                            </div>
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/UpBz_p9av18" title="NoiseBreakdown: Omar Keif | Ziad Zaza - Sama3 Akhina" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 04</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown: Omar Keif | Ziad Zaza - Sama3 Akhina</h4>
+                            </div>
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/KrAF9Pj6KE8" title="NoiseBreakdown | 5mstasher - Bahz ft. Afroto" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 05</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown | 5mstasher - Bahz ft. Afroto</h4>
+                            </div>
+                            <div class="brutal-panel p-3 space-y-2">
+                                <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                    <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/4a4gskR4iec" title="NoiseBreakdown | Mohaimen - Amtar ft. Mousv" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <span class="stencil-tag text-acid-orange">EPISODE 06</span>
+                                <h4 class="font-mono text-xs font-bold text-white truncate">NoiseBreakdown | Mohaimen - Amtar ft. Mousv</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Shortform Breakdown Reels (6) -->
+                    <div class="space-y-2 pt-4 border-t border-brutal-border">
+                        <span class="font-mono text-xs text-hyper-cyan uppercase font-bold block">INSTAGRAM BREAKDOWN REELS (6)</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 01</span><a href="https://www.instagram.com/reel/C9zn1gZARfU/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C9zn1gZARfU/embed/captioned/" title="Breakdown Reel 1" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 02</span><a href="https://www.instagram.com/reel/C_NxVDLgXyL/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C_NxVDLgXyL/embed/captioned/" title="Breakdown Reel 2" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 03</span><a href="https://www.instagram.com/reel/C-9umQVgJV3/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C-9umQVgJV3/embed/captioned/" title="Breakdown Reel 3" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 04</span><a href="https://www.instagram.com/reel/C-FuKobo8GE/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C-FuKobo8GE/embed/captioned/" title="Breakdown Reel 4" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 05</span><a href="https://www.instagram.com/reel/C_0IDxQAYEz/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C_0IDxQAYEz/embed/captioned/" title="Breakdown Reel 5" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                            <div class="hardware-pod p-2.5 space-y-1">
+                                <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>REEL 06</span><a href="https://www.instagram.com/reel/DG0JPQaoVcV/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                                <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DG0JPQaoVcV/embed/captioned/" title="Breakdown Reel 6" scrolling="no" loading="lazy"></iframe></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.2: ARTIST SPOTLIGHT (4-VIDEO GRID) -->
+                <div id="subpanel-sn-artist" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <span class="font-mono text-xs text-white uppercase block font-bold">ARTIST SPOTLIGHT // 4 EPISODES (DIRECTED & INTERVIEWED BY NOUR KAZEM)</span>
+                        <p class="text-xs text-gray-300">Intimate deep-dive conversations with regional artists exploring their creative journeys, lyrical inspirations, and sonic experiments.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SPOTLIGHT 01</span><a href="https://www.instagram.com/reel/DE0CXtoghKa/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DE0CXtoghKa/embed/captioned/" title="Spotlight 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SPOTLIGHT 02</span><a href="https://www.instagram.com/reel/C94tFIhtvNw/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C94tFIhtvNw/embed/captioned/" title="Spotlight 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SPOTLIGHT 03</span><a href="https://www.instagram.com/reel/C-AzZ6FoKqi/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C-AzZ6FoKqi/embed/captioned/" title="Spotlight 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SPOTLIGHT 04</span><a href="https://www.instagram.com/reel/C5LcNbeIFHR/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5LcNbeIFHR/embed/captioned/" title="Spotlight 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.3: ALBUM SPOTLIGHT (4) -->
+                <div id="subpanel-sn-album" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <span class="font-mono text-xs text-white uppercase block font-bold">ALBUM SPOTLIGHT // 4 EPISODES (DIRECTED & PRODUCED)</span>
+                        <p class="text-xs text-gray-300">Front-to-back examinations of milestone regional album drops, breaking down concept albums and production narratives.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-hyper-cyan font-bold"><span>ALBUM 01</span><a href="https://www.instagram.com/reel/DAEHpYXgq7p/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DAEHpYXgq7p/embed/captioned/" title="Album Spotlight 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-hyper-cyan font-bold"><span>ALBUM 02</span><a href="https://www.instagram.com/reel/C_LdwS6IL47/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C_LdwS6IL47/embed/captioned/" title="Album Spotlight 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-hyper-cyan font-bold"><span>ALBUM 03</span><a href="https://www.instagram.com/reel/C8jLfp2ob5g/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8jLfp2ob5g/embed/captioned/" title="Album Spotlight 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-hyper-cyan font-bold"><span>ALBUM 04</span><a href="https://www.instagram.com/reel/C7hKdjMo8sY/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C7hKdjMo8sY/embed/captioned/" title="Album Spotlight 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.4: MDLBEAST XP (8 Episodes + Reels) -->
+                <div id="subpanel-sn-mdlbeast" class="sn-subpanel hidden space-y-6">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex flex-wrap justify-between items-center gap-2 font-mono text-xs">
+                            <span class="text-signal-green uppercase font-bold">MDLBEAST XP CONVERSATIONS // FULL EPISODES</span>
+                            <span class="text-hyper-cyan font-bold">[POST PRODUCER: NOUR KAZEM]</span>
+                        </div>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            Served as Post Producer across the series. Directed editors on narrative pacing, footage selection, and visual treatment from raw conference recordings through client review loops until final MDLBEAST sign-off and approval.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-signal-green font-bold"><span>MDLBEAST EP 1 (REEL)</span><a href="https://www.instagram.com/reel/C5B1w5wIJA4/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5B1w5wIJA4/embed/captioned/" title="MDLBEAST Ep 1 Reel" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/ve54fEy8Amo" title="XP Conversations: Saudi Spotlight - Lil Eazy" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 02</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations: Saudi Spotlight - Lil Eazy</h4>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-signal-green font-bold"><span>MDLBEAST EP 3 (REEL)</span><a href="https://www.instagram.com/reel/C4084jcoBmz/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C4084jcoBmz/embed/captioned/" title="MDLBEAST Ep 3 Reel" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/BjAjazK6cqE" title="XP Conversations: Suhel Nafar on Signing Artists" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 04</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations: Suhel Nafar on Signing Artists</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/BCKXX7AeOAo" title="XP Conversations with Danah Gari: Inclusivity of Line-Ups" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 05</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations with Danah Gari: Inclusivity of Line-Ups</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/YLQGGVjXE0c" title="XP Conversations- HH Mashael Alshalan: On Sustainability in MENA Music" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 06</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations- HH Mashael Alshalan: On Sustainability in MENA Music</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Bcf5hchxWqc" title="XP Conversations: Maii & Zeid" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 07</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations: Maii & Zeid</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/cj5rB7TZnl0" title="XP Conversations: Sama' Abdulhadi" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-signal-green">MDLBEAST EP 08</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">XP Conversations: Sama' Abdulhadi</h4>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-signal-green font-bold"><span>MDLBEAST HIGHLIGHT</span><a href="https://www.instagram.com/reel/C5WZpJ_o5y_/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5WZpJ_o5y_/embed/captioned/" title="MDLBEAST Highlight" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.5: HOUSE PLANT (4 Episodes) -->
+                <div id="subpanel-sn-houseplant" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex flex-wrap justify-between items-center gap-2 font-mono text-xs">
+                            <span class="font-mono text-xs text-white uppercase block font-bold">HOUSE PLANT LIVE SESSIONS (4 FULL EPISODES)</span>
+                            <span class="text-acid-yellow font-bold">[ON-GROUND PRODUCER & ASSISTANT DIRECTOR: NOUR KAZEM]</span>
+                        </div>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            Live, uninterrupted electronic studio sessions captured in high fidelity with custom atmospheric lighting setups. Served as on-ground producer and assistant director, managing studio set logistics, technical crew coordination, and camera operations during continuous live recordings.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/MMiFdoL9B7E" title="SceneNoise Houseplant 023 - Yas Meen Selectress" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-acid-yellow">EPISODE 023</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">SceneNoise Houseplant 023 - Yas Meen Selectress</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/_BBHvQYP5Po" title="SceneNoise Houseplant 022 - Azzouni" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-acid-yellow">EPISODE 022</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">SceneNoise Houseplant 022 - Azzouni</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/xfeIHUKIFhs" title="SceneNoise Houseplant 021 - Youssef Yasser" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-acid-yellow">EPISODE 021</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">SceneNoise Houseplant 021 - Youssef Yasser</h4>
+                        </div>
+                        <div class="brutal-panel p-3 space-y-2">
+                            <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                                <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/nSH6IioJ7xA" title="SceneNoise Houseplant 020 - Chiati [Live]" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <span class="stencil-tag text-acid-yellow">EPISODE 020</span>
+                            <h4 class="font-mono text-xs font-bold text-white truncate">SceneNoise Houseplant 020 - Chiati [Live]</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.6: FERKESH (4-VIDEO GRID) -->
+                <div id="subpanel-sn-ferkesh" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex flex-wrap justify-between items-center gap-2 font-mono text-xs">
+                            <span class="font-mono text-xs text-white uppercase block font-bold">FERKESH BTS SERIES (4 EPISODES)</span>
+                            <span class="text-acid-orange font-bold">[DIRECTOR & POST PRODUCER: NOUR KAZEM]</span>
+                        </div>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            In this series, directors take us through the making of iconic music videos—from the initial meet with the artist to the final cut and fan reception. I interview the directors remotely while they film themselves in their own spaces, directing the narrative arc and post-producing the final cut.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-white font-bold"><span>FERKESH 01</span><a href="https://www.instagram.com/reel/C_aiG_zgg1K/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C_aiG_zgg1K/embed/captioned/" title="Ferkesh Ep 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-white font-bold"><span>FERKESH 02</span><a href="https://www.instagram.com/reel/C3cxRxmoGmR/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C3cxRxmoGmR/embed/captioned/" title="Ferkesh Ep 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-white font-bold"><span>FERKESH 03</span><a href="https://www.instagram.com/reel/C8RqWqggVUx/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8RqWqggVUx/embed/captioned/" title="Ferkesh Ep 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-white font-bold"><span>FERKESH 04</span><a href="https://www.instagram.com/reel/C5DdYb_Abzr/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5DdYb_Abzr/embed/captioned/" title="Ferkesh Ep 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.7: WORD (5) -->
+                <div id="subpanel-sn-word" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex flex-wrap justify-between items-center gap-2 font-mono text-xs">
+                            <span class="text-white uppercase block font-bold">WORD SERIES // 5 EPISODES</span>
+                            <span class="text-acid-orange font-bold">[POST PRODUCER & DIRECTOR: NOUR KAZEM]</span>
+                        </div>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            A remote, artist-filmed intimate format where artists record themselves in their home or studio environment. I curate and send tailored questionnaire prompts and lyrical breakdown guides, then direct and post-produce the episode—guiding the offline edit, pacing, and visual story to uncover their songwriting craft and lyrical roots.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>WORD 01</span><a href="https://www.instagram.com/reel/C3iBX8Sos6b/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C3iBX8Sos6b/embed/captioned/" title="Word Ep 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>WORD 02</span><a href="https://www.instagram.com/reel/C5n3VqbovU2/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C5n3VqbovU2/embed/captioned/" title="Word Ep 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>WORD 03</span><a href="https://www.instagram.com/reel/C76sIjqIrDX/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C76sIjqIrDX/embed/captioned/" title="Word Ep 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>WORD 04</span><a href="https://www.instagram.com/reel/C9rh-1qgA58/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C9rh-1qgA58/embed/captioned/" title="Word Ep 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>WORD 05</span><a href="https://www.instagram.com/reel/DAWCLyMASko/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DAWCLyMASko/embed/captioned/" title="Word Ep 5" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.8: SCENENOISE SHOOTS -->
+                <div id="subpanel-sn-shoots" class="sn-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex flex-wrap justify-between items-center gap-2 font-mono text-xs">
+                            <span class="text-white uppercase block font-bold">SCENENOISE EDITORIAL SHOOTS & COVERS</span>
+                            <span class="text-acid-orange font-bold">[CREATIVE PRODUCER & MODEL: NOUR KAZEM]</span>
+                        </div>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            Served as Creative Producer and featured Model for this shoot. Collaborated on overall creative direction, led on-ground production operations and set logistics, and oversaw post-production asset pipelines through final publication.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 01</span><a href="https://www.instagram.com/p/C5Vo9TmoUBG/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C5Vo9TmoUBG/embed/captioned/" title="Shoot 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 02</span><a href="https://www.instagram.com/p/C3TFP95tTUP/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C3TFP95tTUP/embed/captioned/" title="Shoot 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 03</span><a href="https://www.instagram.com/reel/C3BEBkNLGY_/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C3BEBkNLGY_/embed/captioned/" title="Shoot 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 04</span><a href="https://www.instagram.com/p/C3DzOPAALIe/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C3DzOPAALIe/embed/captioned/" title="Shoot 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 05</span><a href="https://www.instagram.com/reel/C3LcEU1rrnM/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C3LcEU1rrnM/embed/captioned/" title="Shoot 5" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 06</span><a href="https://www.instagram.com/reel/C3QkmYeLSYz/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C3QkmYeLSYz/embed/captioned/" title="Shoot 6" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 07</span><a href="https://www.instagram.com/p/C3U4-Zyt_Cx/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C3U4-Zyt_Cx/embed/captioned/" title="Shoot 7" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 08</span><a href="https://www.instagram.com/p/C3X5TDmtAY8/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C3X5TDmtAY8/embed/captioned/" title="Shoot 8" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <div class="flex justify-between font-mono text-[9px] text-acid-orange font-bold"><span>SHOOT 09</span><a href="https://www.instagram.com/p/C3Z-DARNADv/" target="_blank" rel="noopener noreferrer">&nearr;</a></div>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C3Z-DARNADv/embed/captioned/" title="Shoot 9" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A.9: EOY Lists (2023–2024) -->
+                <div id="subpanel-sn-eoy" class="sn-subpanel hidden space-y-6">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <div class="flex justify-between items-center font-mono text-xs">
+                            <span class="text-acid-orange font-bold uppercase">SCENENOISE // END OF YEAR (EOY) ARCHIVES</span>
+                            <span class="text-signal-green font-bold">[CURATOR: NOUR KAZEM &bull; 2023 & 2024]</span>
+                        </div>
+                        <h3 class="text-base font-bold text-white font-display uppercase">ANNUAL CRITICS & CULTURAL RECAPS</h3>
+                        <p class="text-xs text-gray-300 font-sans leading-relaxed">
+                            Served as a curator on SceneNoise's official End of Year (EOY) Lists across 2023 and 2024. Co-created collaboratively with the SceneNoise editorial team, researching, deliberating, and selecting the defining albums, tracks, producers, and breakthrough artists shaping Arabic music and regional sound culture.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <span class="font-mono text-xs text-acid-orange font-bold uppercase block">2024 END OF YEAR LISTS (SCENENOISE)</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 01</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DDfNYEhgJ22/embed/captioned/" title="2024 EOY 1" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 02</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DDkbLTwg5c5/embed/captioned/" title="2024 EOY 2" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 03</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DDr5iIgAQfH/embed/captioned/" title="2024 EOY 3" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 04</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DDznRb4gxyO/embed/captioned/" title="2024 EOY 4" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 05</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DD4lL3Ngbwj/embed/captioned/" title="2024 EOY 5" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 06</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DECU98GAIPK/embed/captioned/" title="2024 EOY 6" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 07</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DEIIyakIVSn/embed/captioned/" title="2024 EOY 7" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 08</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DEKtlAbgUY-/embed/captioned/" title="2024 EOY 8" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 09</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DENX2LxgN6Z/embed/captioned/" title="2024 EOY 9" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 10</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DEcW4dUozk6/embed/captioned/" title="2024 EOY 10" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2024 EOY 11</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DEkOxW1A2Cx/embed/captioned/" title="2024 EOY 11" scrolling="no" loading="lazy"></iframe></div></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-4 border-t border-brutal-border">
+                        <span class="font-mono text-xs text-hyper-cyan font-bold uppercase block">2023 END OF YEAR LISTS (SCENENOISE)</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 01</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1Pa81SIyK6/embed/captioned/" title="2023 EOY 1" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 02</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1SKBmuIoGV/embed/captioned/" title="2023 EOY 2" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 03</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1UgG7XIwqj/embed/captioned/" title="2023 EOY 3" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 04</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1Wq0QxoiI8/embed/captioned/" title="2023 EOY 4" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 05</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1Xc0p_IjT2/embed/captioned/" title="2023 EOY 5" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 06</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1Z1pMTodIy/embed/captioned/" title="2023 EOY 6" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 07</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1hIQjGoxx3/embed/captioned/" title="2023 EOY 7" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 08</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1l_dvUgdsH/embed/captioned/" title="2023 EOY 8" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 09</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1mhkPhI4BV/embed/captioned/" title="2023 EOY 9" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 10</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1pt-AYo_Z2/embed/captioned/" title="2023 EOY 10" scrolling="no" loading="lazy"></iframe></div></div>
+                            <div class="hardware-pod p-2.5 space-y-1"><span class="font-mono text-[9px] text-gray-400 font-bold">2023 EOY 11</span><div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/C1rn2weo1sO/embed/captioned/" title="2023 EOY 11" scrolling="no" loading="lazy"></iframe></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Platform B: CairoScene Panel -->
+            <div id="panel-plat-cairoscene" class="editorial-platform-panel hidden space-y-6">
+                <!-- B.1: 2024 IMPACT LIST -->
+                <div id="subpanel-cs-impact" class="cs-subpanel space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <span class="font-mono text-xs text-white uppercase block font-bold">CAIROSCENE // 2024 IMPACT LIST</span>
+                        <p class="text-xs text-gray-300">Spotlighting Egypt's top visionaries, disruptors, and cultural leaders redefining business, arts, and design in 2024.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-acid-orange font-bold">IMPACT 01</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DEi96hYtiqM/embed/captioned/" title="CairoScene Impact 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-acid-orange font-bold">IMPACT 02</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DEtqDk_tK1n/embed/captioned/" title="CairoScene Impact 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-acid-orange font-bold">IMPACT 03</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/p/DE6m4MIt54d/embed/captioned/" title="CairoScene Impact 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- B.2: BUY LOCAL WITH BOTIT -->
+                <div id="subpanel-cs-buylocal" class="cs-subpanel hidden space-y-4">
+                    <div class="brutal-panel p-4 space-y-1">
+                        <span class="font-mono text-xs text-white uppercase block font-bold">BUY LOCAL WITH BOTIT // CAIROSCENE COMMERCIAL SERIES</span>
+                        <p class="text-xs text-gray-300">Commercial partnership series championing homegrown Egyptian brands, artisans, and e-commerce innovators.</p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-hyper-cyan font-bold">BOTIT 01</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8C8a2bty3u/embed/captioned/" title="Buy Local Botit 1" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-hyper-cyan font-bold">BOTIT 02</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8IBy1btW8v/embed/captioned/" title="Buy Local Botit 2" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-hyper-cyan font-bold">BOTIT 03</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8NNG22tq9v/embed/captioned/" title="Buy Local Botit 3" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                        <div class="hardware-pod p-2.5 space-y-1">
+                            <span class="font-mono text-[9px] text-hyper-cyan font-bold">BOTIT 04</span>
+                            <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C8SO03-t91b/embed/captioned/" title="Buy Local Botit 4" scrolling="no" loading="lazy"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 03: COMMERCIALS & CLIENT WORK -->
+        <!-- ========================================== -->
+        <section id="tab-commercials" class="master-panel hidden space-y-6">
+            <div class="brutal-panel p-4 flex flex-wrap items-center justify-between gap-3">
+                <span class="font-mono text-xs text-white uppercase"><span class="text-acid-orange font-bold">CLIENT WORK</span> // EXECUTED BY NOUR KAZEM</span>
+                <span class="font-mono text-xs text-gray-400">ENTERPRISE CAMPAIGNS & MAIN COPY</span>
+            </div>
+
+            <!-- 03.1: PEPSICO -->
+            <div id="subpanel-comm-pepsi" class="comm-subpanel space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">PEPSICO HARVESTING SEASON CAMPAIGN // 4 COMMERCIAL CUTS (PRODUCER)</span>
+                    <span class="text-hyper-cyan">[DIGITAL CAMPAIGN SPOTS]</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <span class="font-mono text-[9px] text-acid-orange font-bold">PEPSICO 01</span>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C9r9brYtveP/embed/captioned/" title="PepsiCo Commercial 1" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <span class="font-mono text-[9px] text-acid-orange font-bold">PEPSICO 02</span>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C-AV1J_tQEF/embed/captioned/" title="PepsiCo Commercial 2" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <span class="font-mono text-[9px] text-acid-orange font-bold">PEPSICO 03</span>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/C-saZzOt_Yp/embed/captioned/" title="PepsiCo Commercial 3" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                    <div class="hardware-pod p-2.5 space-y-1">
+                        <span class="font-mono text-[9px] text-acid-orange font-bold">PEPSICO 04</span>
+                        <div class="ig-crop-container"><iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DCeXH4rNEz0/embed/captioned/" title="PepsiCo Commercial 4" scrolling="no" loading="lazy"></iframe></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03.2: DIDI EGYPT -->
+            <div id="subpanel-comm-didi" class="comm-subpanel hidden space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">DIDI EGYPT // DIGITAL CAMPAIGN (DIRECTOR)</span>
+                    <span class="text-acid-orange">[DIGITAL COMMERCIAL CAMPAIGN]</span>
+                </div>
+                <div class="max-w-3xl brutal-panel p-3 space-y-2">
+                    <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/NH3HWOM0Hos" title="DiDi Commercial" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <h4 class="font-mono text-xs font-bold text-white">DiDi Egypt // Digital Campaign (Director)</h4>
+                    <p class="text-xs text-gray-400 font-sans">Directed digital commercial campaign for DiDi Egypt, driving rider activations and brand narrative across digital platforms.</p>
+                </div>
+            </div>
+
+            <!-- 03.3: PAPIA EGYPT -->
+            <div id="subpanel-comm-papia" class="comm-subpanel hidden space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">PAPIA EGYPT // MAIN COPY COMMERCIAL (ASSISTANT PRODUCER)</span>
+                    <span class="text-signal-green">[NATIONAL TV & DIGITAL CAMPAIGN]</span>
+                </div>
+                <div class="max-w-3xl brutal-panel p-3 space-y-2">
+                    <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/MHCCsGAMiOE" title="Papia Egypt Commercial" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <h4 class="font-mono text-xs font-bold text-white">Papia Egypt (Main Copy Commercial) (Assistant Producer)</h4>
+                    <p class="text-xs text-gray-400 font-sans">Assistant produced the national main-copy television and digital campaign for Papia Egypt, managing talent casting, set logistics, and agency communication.</p>
+                </div>
+            </div>
+
+            <!-- 03.4: DORITOS VO -->
+            <div id="subpanel-comm-doritos" class="comm-subpanel hidden space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">DORITOS // MAIN COPY (VOICE-OVER ARTIST)</span>
+                    <span class="text-acid-orange">[MAIN COPY LEAD]</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/04eMS0j2LvI" title="Doritos Spot 1" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-orange">DORITOS // 40S SPOT</span>
+                        <h4 class="font-mono text-xs font-bold text-white truncate" title="قرمشة واحدة من دوريتوس حار نااار بالليمون وهتولع الدنيا لعب">قرمشة واحدة من دوريتوس حار نااار بالليمون وهتولع الدنيا لعب</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Main Copy &bull; Voice-Over Artist: Nour Kazem</p>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/zRyKsSVBo0k" title="Doritos Hero Spot" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-orange">DORITOS // MAIN HERO SPOT</span>
+                        <h4 class="font-mono text-xs font-bold text-white truncate" title="اللعب عايز قلب … ولع الدنيا لعب مع دوريتوس حار نااار بالليمون">اللعب عايز قلب … ولع الدنيا لعب مع دوريتوس حار نااار بالليمون</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Main Copy &bull; Voice-Over Artist: Nour Kazem</p>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/zRyKsSVBo0k" title="Doritos Alternate Cut" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="stencil-tag text-acid-orange">DORITOS // ALTERNATE CUT</span>
+                        <h4 class="font-mono text-xs font-bold text-white truncate" title="اللعب عايز قلب … ولع الدنيا لعب مع دوريتوس حار نااار بالليمون">اللعب عايز قلب … ولع الدنيا لعب مع دوريتوس حار نااار بالليمون</h4>
+                        <p class="text-[11px] text-gray-400 font-sans">Alternate Main Copy &bull; Voice-Over Artist: Nour Kazem</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 04: MUSIC VIDEOS & KA2EN RECORDS -->
+        <!-- ========================================== -->
+        <section id="tab-musicvideos" class="master-panel hidden space-y-6">
+            <div class="brutal-panel p-4 flex flex-wrap items-center justify-between gap-3">
+                <span class="font-mono text-xs text-white uppercase"><span class="text-acid-orange font-bold">MUSIC VIDEOS & KA2EN RECORDS</span> // DIRECTED & PRODUCED BY NOUR KAZEM</span>
+                <span class="font-mono text-xs text-signal-green">CO-FOUNDER & MANAGING DIRECTOR &bull; 2M+ STREAMS</span>
+            </div>
+
+            <!-- 04.1: ALL 8 RELEASES -->
+            <div id="subpanel-mv-releases" class="mv-subpanel space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/KEiBcCYWeOc" title="KAMIKAZEM X KARAMELL - 3ADY (OFFICIAL MUSIC VIDEO)" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">KAMIKAZEM X KARAMELL - 3ADY (OFFICIAL MUSIC VIDEO)</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/FgK-izdg6AY" title="Kamikazem X Gello - Abbas El Gen (Official Music Video)" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">Kamikazem X Gello - Abbas El Gen (Official Music Video)</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/2yZADEQtR60" title="Ma-Beyn, The Album Film | مابين - فيلم غنائي" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">Ma-Beyn, The Album Film | مابين - فيلم غنائي</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/xQ-bYCD179w" title="KAMIKAZEM X GE11O X MA-BEYN - HADAF FT. TRZY" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">KAMIKAZEM X GE11O X MA-BEYN - HADAF FT. TRZY</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/_4Y9pKmy7wc" title="Kamikazem - Bafakar Feeky (Official Music Video)" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">Kamikazem - Bafakar Feeky (Official Music Video)</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/wi5czivqM08" title="AFSH - KAMIKAZEM (PROD. BY SUDMA)" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">AFSH - KAMIKAZEM (PROD. BY SUDMA)</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Ej5CEugUR40" title="El Ha2i2a Bayna - Kamikazem & gello (Visualizer)" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">El Ha2i2a Bayna - Kamikazem & gello (Visualizer)</span>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Ej5CEugUR40" title="Ka2en Records Release 08" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-white block truncate">Ka2en Records Release 08</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 04.2: LABEL STILLS -->
+            <div id="subpanel-mv-stills" class="mv-subpanel hidden space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="brutal-panel p-3 space-y-2">
+                        <span class="font-mono text-xs text-acid-orange font-bold">ON-SET FILM STILL 01</span>
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <img src="https://placehold.co/1280x720/111116/ff4600?text=KA2EN+STILL+01" width="1280" height="720" loading="lazy" alt="Ka2en Still 1" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="brutal-panel p-3 space-y-2">
+                        <span class="font-mono text-xs text-hyper-cyan font-bold">ON-SET FILM STILL 02</span>
+                        <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                            <img src="https://placehold.co/1280x720/111116/00f0ff?text=KA2EN+STILL+02" width="1280" height="720" loading="lazy" alt="Ka2en Still 2" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- TAB 05: LIVE & EXPERIENTIAL -->
+        <!-- ========================================== -->
+        <section id="tab-live" class="master-panel hidden space-y-6">
+            <div class="brutal-panel p-4 flex flex-wrap items-center justify-between gap-3">
+                <span class="font-mono text-xs text-white uppercase"><span class="text-acid-orange font-bold">LIVE & EXPERIENTIAL</span> // MEDIA BOOTHS & SUMMIT OPERATIONS</span>
+                <span class="font-mono text-xs text-signal-green">PYRAMIDS, GFF & FESTIVALS</span>
+            </div>
+
+            <!-- 05.1: ART D'EGYPTE -->
+            <div id="subpanel-live-artdegypte" class="live-subpanel space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">ART D'EGYPTE // EXPERIENTIAL EVENT COVERAGE (PYRAMIDS OF GIZA)</span>
+                    <span class="text-acid-orange">[PYRAMIDS OF GIZA EXPERIENTIAL FILM]</span>
+                </div>
+                <div class="max-w-4xl brutal-panel p-3 space-y-2">
+                    <div class="aspect-video bg-black border border-brutal-border overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Yzo9rkrXq1o" title="Art D'Egypte Event Coverage" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <h4 class="font-mono text-xs font-bold text-white">Art D'Egypte Exhibition Event Coverage // Pyramids of Giza</h4>
+                    <p class="text-gray-400 font-sans text-xs">Live media coverage, team coordination, and on-site production at the Pyramids of Giza.</p>
+                </div>
+            </div>
+
+            <!-- 05.2: RISEUP SUMMIT -->
+            <div id="subpanel-live-riseup" class="live-subpanel hidden space-y-4">
+                <div class="flex justify-between items-center font-mono text-xs border-b border-brutal-border pb-2">
+                    <span class="text-white font-bold">RISEUP SUMMIT // GRAND EGYPTIAN MUSEUM (GEM)</span>
+                    <span class="text-hyper-cyan">[LIVE SOCIAL COVERAGE UNIT]</span>
+                </div>
+                <div class="max-w-md hardware-pod p-3 space-y-2">
+                    <div class="flex justify-between font-mono text-[10px] text-hyper-cyan border-b border-brutal-border pb-1">
+                        <span class="font-bold">RISEUP SUMMIT REEL</span>
+                        <a href="https://www.instagram.com/reel/DJcCk4BoFO3/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white underline">VIEW ON IG &nearr;</a>
+                    </div>
+                    <div class="ig-crop-container">
+                        <iframe class="ig-hardware-frame" src="https://www.instagram.com/reel/DJcCk4BoFO3/embed/captioned/" title="RiseUp Summit Highlight" scrolling="no" loading="lazy"></iframe>
+                    </div>
+                    <span class="font-mono text-xs text-white block">RiseUp Summit Live Highlight Reel // Grand Egyptian Museum</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BRUTALIST INDUSTRIAL STATUS FOOTER -->
+    <footer class="border-t border-brutal-border bg-[#050508] py-6 px-4 mt-12 font-mono text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-gray-400">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-signal-green inline-block"></span>
+                <span class="text-white font-bold font-display uppercase tracking-wider">NOUR KAZEM // PRODUCTION PORTFOLIO</span>
+                <span class="text-gray-500">CAIRO // MENA</span>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 text-[11px]">
+                <a href="mailto:nourkazem6@gmail.com" class="text-white hover:text-acid-orange font-bold">nourkazem6@gmail.com</a>
+                <span class="text-gray-600">/</span>
+                <a href="tel:+201006850680" class="text-hyper-cyan hover:underline">+20 100 685 0680</a>
+                <span class="text-gray-600">/</span>
+                <span class="text-signal-green font-bold">STATUS: OPEN FOR HIRE</span>
+                <span class="text-acid-orange font-bold">&copy; 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE STATE CONTROLLER -->
+    <script>
+        const subtabsConfig = {
+            'tab-overview': [
+                { id: 'sub-overview-main', label: '00.1 // DOSSIER & PILLARS', target: 'overview' }
+            ],
+            'tab-redbull': [
+                { id: 'sub-rb-overview', label: '01.0 // OVERVIEW', target: 'subpanel-rb-overview' },
+                { id: 'sub-rb-docuseries', label: '01.1 // DOCU-SERIES (6)', target: 'subpanel-rb-docuseries' },
+                { id: 'sub-rb-musicvideos', label: '01.2 // MUSIC VIDEOS (6)', target: 'subpanel-rb-musicvideos' },
+                { id: 'sub-rb-docuconcert', label: '01.3 // CONCERT & FEATURE', target: 'subpanel-rb-docuconcert' },
+                { id: 'sub-rb-promo', label: '01.4 // PROMO REELS (5)', target: 'subpanel-rb-promo' },
+                { id: 'sub-rb-screening', label: '01.5 // VIP SCREENING', target: 'subpanel-rb-screening' }
+            ],
+            'tab-editorial': [
+                { id: 'sub-ed-scenenoise', label: '↳ EDITORIAL // SCENENOISE', platform: 'scenenoise' },
+                { id: 'sub-ed-cairoscene', label: '↳ EDITORIAL // CAIROSCENE', platform: 'cairoscene' }
+            ],
+            'tab-commercials': [
+                { id: 'sub-comm-pepsi', label: '03.1 // PEPSICO (4)', target: 'subpanel-comm-pepsi' },
+                { id: 'sub-comm-didi', label: '03.2 // DIDI EGYPT', target: 'subpanel-comm-didi' },
+                { id: 'sub-comm-papia', label: '03.3 // PAPIA EGYPT', target: 'subpanel-comm-papia' },
+                { id: 'sub-comm-doritos', label: '03.4 // DORITOS VO', target: 'subpanel-comm-doritos' }
+            ],
+            'tab-musicvideos': [
+                { id: 'sub-mv-releases', label: '04.1 // ALL 8 RELEASES', target: 'subpanel-mv-releases' },
+                { id: 'sub-mv-stills', label: '04.2 // PRODUCTION STILLS', target: 'subpanel-mv-stills' }
+            ],
+            'tab-live': [
+                { id: 'sub-live-artdegypte', label: '05.1 // ART D\'EGYPTE', target: 'subpanel-live-artdegypte' },
+                { id: 'sub-live-riseup', label: '05.2 // RISEUP SUMMIT', target: 'subpanel-live-riseup' }
+            ]
+        };
+
+        const seriesConfig = {
+            'scenenoise': [
+                { id: 'sn-breakdown', label: 'A.1 // NOISE BREAKDOWN', target: 'subpanel-sn-breakdown' },
+                { id: 'sn-artist', label: 'A.2 // ARTIST SPOTLIGHT (4)', target: 'subpanel-sn-artist' },
+                { id: 'sn-album', label: 'A.3 // ALBUM SPOTLIGHT (4)', target: 'subpanel-sn-album' },
+                { id: 'sn-mdlbeast', label: 'A.4 // MDLBEAST XP', target: 'subpanel-sn-mdlbeast' },
+                { id: 'sn-houseplant', label: 'A.5 // HOUSE PLANT (4)', target: 'subpanel-sn-houseplant' },
+                { id: 'sn-ferkesh', label: 'A.6 // FERKESH (4)', target: 'subpanel-sn-ferkesh' },
+                { id: 'sn-word', label: 'A.7 // WORD (5)', target: 'subpanel-sn-word' },
+                { id: 'sn-shoots', label: 'A.8 // EDITORIAL SHOOTS', target: 'subpanel-sn-shoots' },
+                { id: 'sn-eoy', label: 'A.9 // EOY LISTS (23-24)', target: 'subpanel-sn-eoy' }
+            ],
+            'cairoscene': [
+                { id: 'cs-impact', label: 'B.1 // 2024 IMPACT LIST', target: 'subpanel-cs-impact' },
+                { id: 'cs-buylocal', label: 'B.2 // BUY LOCAL WITH BOTIT', target: 'subpanel-cs-buylocal' }
+            ]
+        };
+
+        let currentMasterTab = 'tab-overview';
+        let currentEditorialPlatform = 'scenenoise';
+
+        function switchMasterTab(tabId) {
+            currentMasterTab = tabId;
+
+            document.querySelectorAll('.master-panel').forEach(panel => panel.classList.add('hidden'));
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) targetPanel.classList.remove('hidden');
+
+            document.querySelectorAll('.master-tab-btn').forEach(btn => {
+                btn.className = 'master-tab-btn px-3 py-1.5 border border-brutal-border bg-brutal-card text-gray-400 hover:text-white hover:border-gray-500 transition-all';
+            });
+            const activeBtn = document.getElementById(`btn-${tabId}`);
+            if (activeBtn) {
+                activeBtn.className = 'master-tab-btn px-3 py-1.5 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all';
+            }
+
+            renderAttachedSubtabs(tabId);
+
+            const seriesBar = document.getElementById('attached-series-bar');
+            if (tabId === 'tab-editorial') {
+                if (seriesBar) seriesBar.classList.remove('hidden');
+                switchEditorialPlatform(currentEditorialPlatform);
+            } else {
+                if (seriesBar) seriesBar.classList.add('hidden');
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function renderAttachedSubtabs(tabId) {
+            const container = document.getElementById('subtab-container');
+            if (!container) return;
+            container.innerHTML = '';
+            const subtabs = subtabsConfig[tabId] || [];
+
+            if (subtabs.length === 0) {
+                container.innerHTML = '<span class="text-gray-500 font-mono text-[10px]">↳ ROOT ARCHIVE LEVEL</span>';
+                return;
+            }
+
+            subtabs.forEach((item, index) => {
+                const btn = document.createElement('button');
+                btn.textContent = item.label;
+                btn.id = item.id;
+                btn.className = index === 0 
+                    ? 'px-2.5 py-1 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all'
+                    : 'px-2.5 py-1 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                
+                btn.onclick = () => {
+                    Array.from(container.children).forEach(b => {
+                        b.className = 'px-2.5 py-1 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                    });
+                    btn.className = 'px-2.5 py-1 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all';
+
+                    if (item.target) {
+                        const parentClass = tabId === 'tab-redbull' ? '.rb-subpanel'
+                            : tabId === 'tab-commercials' ? '.comm-subpanel'
+                            : tabId === 'tab-musicvideos' ? '.mv-subpanel'
+                            : tabId === 'tab-live' ? '.live-subpanel' : '';
+                        
+                        if (parentClass) {
+                            document.querySelectorAll(parentClass).forEach(p => p.classList.add('hidden'));
+                            const p = document.getElementById(item.target);
+                            if (p) p.classList.remove('hidden');
+                        }
+                    } else if (item.platform) {
+                        switchEditorialPlatform(item.platform);
+                    }
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function renderAttachedSeries(platform) {
+            const container = document.getElementById('series-container');
+            if (!container) return;
+            container.innerHTML = '';
+            const series = seriesConfig[platform] || [];
+
+            const label = document.createElement('span');
+            label.textContent = platform === 'scenenoise' ? '↳↳ SCENENOISE:' : '↳↳ CAIROSCENE:';
+            label.className = 'text-hyper-cyan font-bold pr-1';
+            container.appendChild(label);
+
+            series.forEach((item, index) => {
+                const btn = document.createElement('button');
+                btn.textContent = item.label;
+                btn.className = index === 0 
+                    ? 'px-2 py-0.5 border border-hyper-cyan bg-hyper-cyan/20 text-white font-bold transition-all'
+                    : 'px-2 py-0.5 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                
+                btn.onclick = () => {
+                    Array.from(container.children).forEach(b => {
+                        if (b.tagName === 'BUTTON') {
+                            b.className = 'px-2 py-0.5 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                        }
+                    });
+                    btn.className = 'px-2 py-0.5 border border-hyper-cyan bg-hyper-cyan/20 text-white font-bold transition-all';
+
+                    const panelClass = platform === 'scenenoise' ? '.sn-subpanel' : '.cs-subpanel';
+                    document.querySelectorAll(panelClass).forEach(p => p.classList.add('hidden'));
+                    const target = document.getElementById(item.target);
+                    if (target) target.classList.remove('hidden');
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function switchEditorialPlatform(platform) {
+            currentEditorialPlatform = platform;
+
+            document.querySelectorAll('.editorial-platform-panel').forEach(p => p.classList.add('hidden'));
+            const activePanel = document.getElementById(`panel-plat-${platform}`);
+            if (activePanel) activePanel.classList.remove('hidden');
+
+            const container = document.getElementById('subtab-container');
+            if (container) {
+                Array.from(container.children).forEach(b => {
+                    const isTarget = (platform === 'scenenoise' && b.id === 'sub-ed-scenenoise') ||
+                                     (platform === 'cairoscene' && b.id === 'sub-ed-cairoscene');
+                    b.className = isTarget
+                        ? 'px-2.5 py-1 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all'
+                        : 'px-2.5 py-1 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                });
+            }
+
+            renderAttachedSeries(platform);
+        }
+
+        function navigateToDocuseriesEpisode(epId) {
+            if (currentMasterTab !== 'tab-redbull') {
+                switchMasterTab('tab-redbull');
+            }
+
+            document.querySelectorAll('.rb-subpanel').forEach(p => p.classList.add('hidden'));
+            const docuPanel = document.getElementById('subpanel-rb-docuseries');
+            if (docuPanel) docuPanel.classList.remove('hidden');
+
+            const container = document.getElementById('subtab-container');
+            if (container) {
+                Array.from(container.children).forEach(b => {
+                    if (b.textContent.includes('DOCU-SERIES')) {
+                        b.className = 'px-2.5 py-1 border border-acid-orange bg-acid-orange/20 text-white font-bold transition-all';
+                    } else {
+                        b.className = 'px-2.5 py-1 border border-brutal-border bg-brutal-surface text-gray-400 hover:text-white hover:border-gray-400 transition-all';
+                    }
+                });
+            }
+
+            const targetCard = document.getElementById(epId);
+            if (targetCard) {
+                setTimeout(() => {
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetCard.classList.add('border-acid-orange', 'ring-2', 'ring-acid-orange/60');
+                    setTimeout(() => {
+                        targetCard.classList.remove('ring-2', 'ring-acid-orange/60');
+                    }, 2200);
+                }, 100);
+            }
+        }
+
+        function handleCallsignPhotoUpload(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = document.getElementById('callsign-portrait-img');
+                if (img) img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function promptCallsignPhotoUrl() {
+            const img = document.getElementById('callsign-portrait-img');
+            const current = img ? img.getAttribute('src') : '';
+            const url = prompt('Enter image URL or filename for Callsign portrait:', current);
+            if (url && url.trim()) {
+                if (img) img.src = url.trim();
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            switchMasterTab('tab-overview');
+        });
+    </script>
+</body>
+</html>
